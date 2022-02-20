@@ -1,0 +1,123 @@
+
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    color: #201d1d;
+    background: rgb(224, 247, 196);
+}
+
+section{
+    min-height: 50vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+.heading{
+    text-align: center;
+    color:#201d1d;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.review .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.review .box-container .box{
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+}
+
+.review .box-container .box .fa-quote-right{
+    position: absolute;
+    top: 1rem; right: 2rem;
+    font-size: 8rem;
+    color: var(--light-blue);
+    opacity: .3;
+}
+.review .box-container .box .user img{
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 200px;
+    width: auto;
+}
+.review .box-container .box .user h3{
+    font-size: 2.2rem;
+    color: rgb(3, 119, 119);
+    text-transform: capitalize;
+    margin: .5rem;
+}
+.review .box-container .box .user span{
+    font-size: 1.2rem;
+}
+.review .box-container .box .user .stars{
+    font-size: 2rem;
+}
+.review .box-container .box .user .stars .fa-star{
+    color: var(--gradient);
+}
+
+.review .box-container .box .user .comment{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.review .box-container .box .user .comment p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+.review .box-container .box .user .comment span{
+    font-size: 1.6rem;
+    color: rgb(160, 112, 22);
+    font-weight: bold;
+}
+
+
+@media (max-width:900px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:400px){
+    html{
+        font-size: 50%;
+    }
+    .home  .content i{
+        font-size: 1.8rem;
+    }
+    .home  .content p{
+        font-size: 2rem;
+    }
+    .home  .content span{
+        font-size: 2rem;
+    }
+}
