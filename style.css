@@ -14,8 +14,8 @@ html{
     overflow-x: hidden;
 }
 body{
-    color: #201d1d;
-    background: rgb(224, 247, 196);
+    color: #f5f2ec;
+    background:  #010203;
 }
 
 section{
@@ -26,7 +26,7 @@ section{
 }
 .heading{
     text-align: center;
-    color:#201d1d;
+    color:#c59733;
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 3.5rem;
@@ -41,33 +41,54 @@ section{
     flex-wrap: wrap;
 }
 .review .box-container .box{
-    background: #fff;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     margin: 1rem;
     padding: 1rem;
     text-align: center;
     position: relative;
-    border: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(223, 176, 21, 0.233) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     flex: 1 1 30rem;
-    border-radius: .5rem;
+    border-radius: .7rem;
 }
 
-.review .box-container .box .fa-quote-right{
-    position: absolute;
-    top: 1rem; right: 2rem;
-    font-size: 8rem;
-    color: var(--light-blue);
-    opacity: .3;
+.review .box-container .box .social-media .fa{
+    padding: 10px;
+    font-size: 18px;
+    width: 5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.review .box-container .box .social-media .fa:hover{
+    color: white;
+    background: rgb(137, 245, 104);
+    transition: .3s;
+}
+.review .box-container .box .social-media .fa-linkedin{
+    background: rgb(6, 133, 175);
+    color: white;
+    border-radius: 50%;
+}
+.review .box-container .box .social-media .fa-github{
+    background: rgb(29, 30, 31);
+    color: white;
+    border-radius: 50%;
+}
+.review .box-container .box .social-media .fa-envelope{
+    background: rgb(255, 35, 35);
+    color: white;
+    border-radius: 50%;
 }
 .review .box-container .box .user img{
     border-radius: 50%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    height: 200px;
+    height: 180px;
     width: auto;
 }
 .review .box-container .box .user h3{
     font-size: 2.2rem;
-    color: rgb(3, 119, 119);
+    color: rgb(23, 24, 24);
     text-transform: capitalize;
     margin: .5rem;
 }
@@ -91,7 +112,7 @@ section{
 }
 .review .box-container .box .user .comment span{
     font-size: 1.6rem;
-    color: rgb(160, 112, 22);
+    color: rgb(20, 20, 19);
     font-weight: bold;
 }
 
